@@ -1,0 +1,5 @@
+$(document).foundation()
+
+AOS.init();
+
+  

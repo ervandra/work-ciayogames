@@ -1,0 +1,3458 @@
+body {
+	font-family: 'RobotoRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+		'Helvetica Neue', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'RobotoRegular', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+  'Helvetica Neue', sans-serif;
+	
+}
+
+p {
+  font-weight: 400; 
+}
+
+#banner-homepage {
+  background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+#content-1-homepage {
+  background: #FFFFFF;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0rem;
+}
+
+#content-2-homepage {
+  background: url(../images/HOMEPAGE_bottom_banner.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 600px;
+  color: #ffffff;
+  
+}
+
+
+.curtain-menu {
+  display: none;
+}
+
+.top-bar {
+  background-size: cover;
+  position: fixed;
+  border: none;
+  background: linear-gradient(90deg, rgba(0,212,255,0) 5%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 91%, rgba(0,0,0,0) 87%);
+  /* -webkit-clip-path: polygon(2% 5%, 93% 5%, 91.35% 49%, 93% 95%, 2% 95%, 0% 50%);
+  clip-path: polygon(2% 5%, 93% 5%, 91.35% 49%, 93% 95%, 2% 95%, 0% 50%); */
+  z-index: 2000;
+  width: 1200px;
+  margin-left: -600px;
+  height: 78px;
+  left: 50%;
+  top: 2px;
+
+}
+
+.top-bar, .top-bar ul {
+  background-color: transparent;
+  color: #ffffff;
+  align-items: center;
+}
+
+.top-bar, .top-bar ul li a {
+  color: #e68d1a;
+}
+
+.active-page {
+  color: #ffffff !important;
+}
+
+.title-bar {
+  display: none;
+}
+
+.top-bar, .top-bar ul li a:hover {
+  color: #ffffff;
+}
+
+.top-bar, .top-bar ul li a.active-by-js {
+  color: #ffffff;
+}
+
+.icon-search {
+  position: absolute;
+  top: 40%;
+  width: 16px;
+  right: 34px;
+}
+
+.dropdown-pane {
+  position: absolute;
+  z-index: 10;
+  display: flex !important;
+  width: 1135px;
+  padding: 1rem 7rem;
+  visibility: hidden;
+  border: 0px solid #cacaca;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #fefefe;
+  font-size: 1rem;
+  background: url(../images/CIAYO-games-dropdown-menu-full.png) no-repeat center;
+  background-size: 100% 100%;
+  left: 3%;
+  top: 89%;
+  height: 78px;
+}
+
+.dropdown-link {
+  color: #ffffff !important;
+}
+
+.dropdown-link:hover {
+  color: #efa33f !important;
+}
+
+.icon-dropdown {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari prior 9.0 */
+  transform: rotate(90deg);
+}
+
+.menu.horizontal {
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+  position: absolute;
+  width: 40px;
+  height: 4px;
+  transition-timing-function: ease;
+  transition-duration: .15s;
+  transition-property: transform;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.hamburger {
+  font: inherit;
+  display: flex;
+  overflow: visible;
+  margin: 0;
+  padding: 15px;
+  cursor: pointer;
+  transition-timing-function: linear;
+  transition-duration: .15s;
+  transition-property: opacity,filter;
+  text-transform: none;
+  color: inherit;
+  border: 0;
+  background-color: transparent;
+}
+
+
+.title-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.button-bg-search {
+  background: url(../images/CIAYO-games-search.png) no-repeat center;
+  -moz-background: url(../images/CIAYO-games-search.png) no-repeat center;
+  -ms-background: url(../images/CIAYO-games-search.png) no-repeat center;
+  -o-background: url(../images/CIAYO-games-search.png) no-repeat center;
+  -webkit-background: url(../images/CIAYO-games-search.png) no-repeat center;
+  background-size: cover;
+  width: 100px;
+  height: 78px;
+  position: relative;
+  padding-left: 1.8rem !important;
+}
+
+.top-bar input.search-top-bar {
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 93px;
+  border-radius: 3rem;
+}
+
+.top-bar input.search-top-bar:hover {
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 200px;
+  transition: width 1s;
+  background: #000;
+  box-shadow: none;
+  color: #fff;
+}
+
+.top-bar input.search-top-bar:focus{
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 200px;
+  transition: width 1s;
+  background: #000;
+  box-shadow: none;
+  color: #fff;
+}
+
+.title-slick-support {
+   color: #000 !important;
+   font-weight: 600;
+   font-size: 2rem;
+}
+
+.button.button-bg-search:focus, .button.button-bg-search:hover {
+  background-color: transparent;
+  color: #E5A135;
+}
+
+
+.dropdown.menu>li>a {
+  padding: .7rem 1.5rem;
+  font-weight: bold;
+  color: #E5A135;
+  font-size: 14px;
+}
+
+.button-scroll-right {
+  width: 40px;
+  padding: 1rem 0rem;
+}
+
+.news-bg-1 {
+  background: url(../images/CIAYO-games-aset-BG-transparan-01-01.png) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  height: 420px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.news-bg-2 {
+  background: url(../images/CIAYO-games-aset-BG-transparan-01-02.png) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  height: 420px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.news-bg-3 {
+  background: url(../images/CIAYO-games-aset-BG-transparan-01-03.png) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  height: 420px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+
+.news-bg-4 {
+  background: url(../images/CIAYO-games-aset-BG-transparan-01-04.png) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 1000px;
+  height: 420px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.news-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: #000000;
+  width: 1000px;
+  height: 500px;
+  margin: 4rem 0rem;
+  color: #ffffff;
+  clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0);
+}
+
+.news-title {
+  width: 100px;
+  height: 50px;
+  background: #333333;
+  color: orange;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+}
+
+.button-seemore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #29ABE2;
+  color: #ffffff;
+  width: 100px;
+  height: 50px;
+  border-radius: 0.4rem;
+}
+
+
+.mc-8 {
+  margin: 0 8rem;
+}
+
+.row-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.column-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.column-center-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#banner-homepage h2 {
+  font-weight: 550;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#banner-homepage h4 {
+  font-size: 1.5rem;
+}
+
+#content-2-homepage h2 {
+  font-size: 2rem;
+}
+
+
+.title-support-page {
+  text-align: center;
+  font-weight: 600;
+  margin: 2rem;
+}
+
+.my-1 {
+  margin: 1rem 0rem;
+}
+
+.my-2 {
+  margin: 2rem 0rem;
+}
+
+.my-3 {
+  margin: 3rem 0rem;
+}
+
+.my-4 {
+  margin: 4rem 0rem;
+}
+
+.my-5 {
+  margin: 5rem 0rem;
+}
+
+.my-6 {
+  margin: 6rem 0rem;
+}
+
+.my-0 {
+  margin: 0rem 0rem;
+}
+
+.mb-0 {
+  margin-bottom: 0rem;
+}
+
+.mt-4 {
+  margin-top: 4rem;
+}
+
+.py-1 {
+  padding: 1rem 0rem;
+}
+
+.py-2 {
+  padding: 2rem 0rem;
+}
+
+.py-3 {
+  padding: 3rem 0rem;
+}
+
+.py-4 {
+  padding: 4rem 0rem;
+}
+
+.px-1 {
+  padding: 0rem 1rem;
+}
+
+.px-2 {
+  padding: 0rem 2rem;
+}
+
+.px-3 {
+  padding: 0rem 3rem;
+}
+
+.px-4 {
+  padding: 0rem 4rem;
+}
+
+.px-5 {
+  padding: 0rem 5rem;
+}
+
+.px-6 {
+  padding: 0rem 6rem;
+}
+
+.px-7 {
+  padding: 0rem 7rem;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.fw-800 {
+  font-weight: 800;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+.info-news h6 {
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.info-news p {
+  font-size: 14px;
+  
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 3rem 0rem;
+}
+
+.footer-left-top {
+  color: #ffffff;
+}
+
+.footer-left-top label {
+  color: #ffffff;
+}
+
+.footer-left-top label{
+  color: #ffffff;
+}
+
+.footer-left-bottom a {
+  margin-right: 2rem;
+}
+
+.footer-right-top {
+  display: flex;
+  justify-content: flex-end;
+  color: #ffffff;
+}
+
+.footer-right-top img{
+ height: 100%;
+}
+
+.footer-right-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #ffffff;
+}  
+
+.footer-left-top a {
+  margin-right: 0.5rem;
+}
+
+.text-white {
+  color: #ffffff !important;
+}
+
+.text-black {
+  color: #000000 !important;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.orbit-container {
+  position: relative;
+  height: 360px;
+  margin: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.w-1200 {
+  width: 1200px;
+}
+
+.pr-4 {
+  padding-right: 3rem;
+}
+
+.mr-0 {
+  margin-right: 0 !important;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+
+.mr-2{
+  margin-right: 2rem;
+}
+
+.br-0 {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.bl-0 {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.p-rl-2 {
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
+.button-orange-1 {
+  background-color: #F4C04D;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.button-orange-2 {
+  background-color: #EFA33F;
+  border-radius: 0px 10px 10px 0px;
+}
+
+.search-top-bar {
+  background-color: transparent;
+  border: none;
+}
+
+.button-see-games {
+  background-color: #F4C04D;
+  color: #000000;
+}
+
+/* hexagon */
+
+.wrap {
+  color: #222;
+  font-size: 24px;
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-caption {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.clip-each {
+  display: block;
+  position: relative;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  margin: 0 auto;
+}
+
+a.clip-each:hover {
+  background: #9E566E;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+.clip-solid {
+  width: 300px;
+  height: 300px;
+  background-image: url("http://karenmenezes.com/shapes-polygon/clip-demo-img.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: #ad6996;
+  background-blend-mode: hard-light;
+  -webkit-transition: all 2.5s linear;
+  transition: all 2.5s linear;
+}
+
+.clip-solid:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+  clip-path: polygon(100% 3%, 17% 100%, 100% 100%);
+  -webkit-clip-path: url("#triangle-clip");
+  clip-path: url("#triangle-clip");
+  background: #9E566E;
+  z-index: 1;
+  width: 100%;
+  height: 155px;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  pointer-events: none;
+}
+
+.clip-solid:hover:after {
+  height: 0;
+  -webkit-transition: all 0.45s ease-in;
+  transition: all 0.45s ease-in;
+}
+
+.clip-solid:hover .social-share-block {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.social-share-block {
+  position: absolute;
+  bottom: 20px;
+  right: 75px;
+  color: #fff;
+  font-size: 70%;
+  z-index: 2;
+}
+
+.social-each {
+  font-size: 80%;
+}
+
+.clip-gradient {
+  background: #222;
+  width: 160px;
+  height: 160px;
+}
+
+.clip-gradient .clip-caption {
+  color: #fff;
+}
+
+.clip-border {
+  background: -webkit-linear-gradient(300deg, #aebcbf 0%, #6e7774 50%, #333 61%, #333 100%);  
+  background: linear-gradient(150deg, #aebcbf 0%,#6e7774 50%,#333 61%,#333 100%);
+  width: 160px;
+  height: 160px;
+  margin-top: 7px;
+  color: #222;
+}
+
+.clip-border::after {
+  content: "";
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  right: 4%;
+  bottom: 4%;
+  margin: 0 auto;
+  background: url("http://karenmenezes.com/shapes-polygon/bg-cubes.png");
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  -webkit-clip-path: url("#hexagon-clip");
+  clip-path: url("#hexagon-clip");
+  z-index: -1;
+}
+
+.clip-tagline {
+  display: block;
+  color: #758C9B;
+  text-decoration: none;
+  text-align: center;
+}
+
+.img-download {
+  margin-right: 2rem;
+}
+
+@media only screen and (min-width: 550px) {
+  .wrap {
+    display: table;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    transform: translateY(-50%) translateX(-50%);
+  }
+
+  .clip-block {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .clip-border {
+    margin-top: 20px;
+  }
+}
+
+/* hexagon end*/
+
+
+/* news page  */
+.banner-news {
+  background: url(../images/NEWS_main_banner.jpg) no-repeat center;
+  background-size: cover;
+  height: 340px;
+}
+
+#content-news {
+  padding: 5rem 0rem;
+}
+
+.button-back-news {
+  color: #000000;
+  font-weight: 610;
+}
+
+.m-back-news {
+  margin-bottom: 2rem;
+}
+
+h5.date-news {
+  color: #EFA33F;
+  font-weight: 600;
+}
+
+h3.title-news {
+  font-weight: 600;
+}
+
+.img-content-news {
+  margin: 3rem 0rem;
+}
+
+.orbit-bullets button.is-active {
+  background-color: #EFA33F;
+}
+
+.orbit-bullets button:hover {
+  background-color: #EFA33F;
+}
+
+.orbit-bullets button {
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.4rem;
+  border-radius: 50%;
+  font-size: 0.8rem !important;
+  background-color: #cacaca;
+}
+
+.orbit-previous {
+  left: -100px;
+  color: #CCCCCC;
+  font-size: 60px;
+}
+
+.orbit-next {
+  right: -100px;
+  color: #CCCCCC;
+  font-size: 60px;
+}
+
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 1rem;
+  background-color: rgba(10,10,10,.5);
+  color: #fefefe;
+  text-align: center;
+}
+
+.orbit-next:active, 
+.orbit-next:focus, 
+.orbit-next:hover, 
+.orbit-previous:active, 
+.orbit-previous:focus, 
+.orbit-previous:hover {
+  background-color: rgb(0, 0, 0);
+}
+/* news page end  */
+
+
+/* our story */
+#banner-our-story {
+  background: url(../images/page-3/CIAYO-Games-page-3-01.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh; 
+  width: 100%;
+  padding: 15rem;
+  position: relative;
+}
+
+#content-our-story {
+  padding: 5rem 0rem;
+}
+
+.content-banner-ourstory {
+  position: absolute;
+  right: 21%;
+  color: #ffffff;
+}
+
+.timeline-bl {
+  border-left: 3px solid #ccc;
+  padding-right: 2rem !important;
+  padding-left: 2rem !important;
+}
+
+.start-line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0rem 0.7rem !important;
+}
+
+.title-timeline {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.time-detail-timeline {
+  color: #ccc;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.time-timeline {
+  position: relative;
+  color: #efa33f;
+  font-weight: 600;
+  margin-bottom: 0rem;
+  font-size: 18px;
+}
+
+.time-timeline:before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  border-top: 3px solid #ccc;
+  right: -26px;
+  z-index: 99;
+}
+
+.button-group {
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+/* our story end */
+
+/* games */
+
+#banner-games {
+  background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+#content-1-games {
+  background: #FFFFFF;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 10rem 0rem;
+  overflow-x: hidden;
+}
+
+.games-bg-1 {
+  background: url(../images/CIAYO-games-aset-BG-04-01.jpg) no-repeat ;
+  background-size: 100% 100%;
+  position: relative;
+  height: 650px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-2 {
+  background: url(../images/CIAYO-games-aset-BG-04-02.jpg) no-repeat ;
+  background-size: 100% 100%;
+  position: relative;
+  height: 650px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-3 {
+  background: url(../images/CIAYO-games-aset-BG-04-03.jpg) no-repeat ;
+  background-size: 100% 100%;
+  position: relative;
+  height: 650px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-4 {
+  background: url(../images/CIAYO-games-aset-BG-04-04.jpg) no-repeat ;
+  background-size: 100% 100%;
+  position: relative;
+  height: 650px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.content-games-1 {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+}
+
+.content-games-2 {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+}
+
+.content-games-3 {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+}
+
+.content-games-4 {
+  position: absolute;
+  right: 6%;
+  bottom: 8%;
+}
+
+.games-link-1 {
+ display: block;
+}
+
+.games-link-2 {
+ display: none;
+}
+
+/* games end */
+
+/* games detail page  */
+.banner-monster-tap {
+  background: url(../images/page-5/CIAYO-Games-page-5-01.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner-heroes-uprising {
+  background: url(../images/page-6/CIAYO-Games-page-6-01.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+.banner-card-heroes-uprising {
+  background: url(../images/page-7/CIAYO-Games-page-7-01.jpg) no-repeat center;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.banner-ciayo-stories {
+  background: url(../images/page-8/CIAYO-Games-page-8-01.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+}
+
+#content-games-detail {
+  padding: 5rem 0rem;
+}
+
+.button-back-games-detail {
+  color: #000000;
+  font-weight: 610;
+}
+
+.m-back-games-detail{
+  margin-bottom: 2rem;
+}
+
+.m-back-games-detail-2{
+  margin-top: 8rem;
+  margin-bottom: 0rem;
+}
+
+.bg-games-achievements {
+  background: url(../images/page-6/CIAYO-Games-page-5-06.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+}
+
+.bg-fun {
+  background: url(../images/page-7/CIAYO-Games-page-7-02.jpg) no-repeat center;
+  background-size: cover;
+  height: 1356px;
+  position: relative;
+}
+
+.bg-adaptation {
+  background: url(../images/page-7/CIAYO-Games-page-7-03.jpg) no-repeat center;
+  background-size: cover;
+  height: 736px;
+  position: relative;
+}
+
+.right-achievements {
+  height: 400px;
+  background-color: #0000007d;
+  padding: 0rem 3rem !important;
+}
+
+.right-adaptation {
+  position: absolute;
+  max-width: 420px;
+  top: 34%;
+  right: 0%;
+  margin: 0rem 2rem;
+  margin-right: 6rem;
+}
+
+.bottom-fun {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  color: #000000;
+  max-width: 1100px;
+  padding: 0rem 2rem;
+  right: 10%;
+}
+
+.title-achievements{
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.bg-sequel {
+  background: url(../images/page-6/CIAYO-Games-page-6-04.jpg) no-repeat center;
+  background-size: cover;
+  height: 450px;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-complex {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 400px;
+  padding: 0rem 12rem;
+  color: #ffffff;
+ 
+}
+
+.content-sequel {
+  height: 450px;
+  background-color: #00000070;
+  max-width: 500px;
+  padding: 2rem;
+  color: #ffffff;
+}
+
+.btn-sequel {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.btn-chu-card-games {
+  color: #000000;
+}
+
+.title-customization {
+  font-weight: 700;
+}
+
+.bg-content-4-ciayo-stories {
+  background: url(../images/page-8/CIAYO-Games-page-8-04.jpg) no-repeat center;
+  background-size: cover;
+  height: 1200px;
+  position: relative;
+
+}
+
+.content-4-ciayo-stories {
+ padding: 0rem 8rem !important;
+ max-width: 800px;
+
+}
+
+.content-4-ciayo-stories a {
+ color: #000000;
+ font-size: 18px;
+ font-weight: 500;
+ margin-right: 0.6rem;
+ 
+ }
+
+.right-adaptation-link {
+ color: #ffffff;
+
+ }
+
+ /* games detail page end*/
+
+ /* career page  */
+ #banner-career{
+  background: url(../images/page-9/CIAYO-Games-page-9-01.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  
+}
+
+.bg-career-3 {
+  background: url(../images/page-9/CIAYO-Games-page-9-03.jpg) no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.bg-career-3-content {
+  position: absolute;
+  bottom: 4%;
+  text-align: center;
+}
+
+.career-4-content {
+  margin: 5rem 0rem;
+}
+
+.tabs {
+  margin: 0;
+  border: 0px solid #e6e6e6;
+  background: #fefefe;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.tabs-content {
+  border: 0px solid #e6e6e6;
+  border-top: 0;
+  background: #fefefe;
+  color: #0a0a0a;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  overflow-y: scroll;
+  height: 530px;
+}
+
+.button-apply {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 1rem 0;
+  padding: 0.99em 3em;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  -webkit-transition: background-color .25s ease-out,color .25s ease-out;
+  transition: background-color .25s ease-out,color .25s ease-out;
+  font-family: inherit;
+  font-size: .9rem;
+  -webkit-appearance: none;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  background-color: #29ABE2;
+  color: #fefefe;
+}
+
+tbody, tfoot, thead {
+  border: 0px solid #f1f1f1;
+  background-color: #fefefe;
+}
+
+table.unstriped tbody tr {
+  border-bottom: 0;
+  border-bottom: 0px solid #f1f1f1;
+  background-color: #fefefe;
+}
+
+.tabs-title>a {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.10rem;
+  line-height: 1;
+  background: #ccc;
+  color: #ffffff;
+  font-weight: 600;
+  width: 200px;
+  margin: 0rem 1rem;
+  text-align: center;
+}
+
+.tabs-title>a:hover {
+  background: #efa33f;
+  color: #000000;
+}
+
+.tabs-title>a:focus, .tabs-title>a[aria-selected=true] {
+  background: #efa33f;
+  color: #000000;
+}
+
+.tabs-panel {
+  display: none;
+  padding: 0rem 0rem;
+}
+
+thead {
+  background: #000000;
+  color: #ffffff;
+}
+
+.panel-tab-career {
+  background-color: #000000;
+  height: 130px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.table-y-overflow {
+  overflow: scroll !important; 
+
+}
+
+.panel-head-table {
+  width: 100%;
+  background-color: #000000;
+  position: absolute;
+  height: 60px;
+  left: 0%;
+}
+
+.table-head-career {
+  z-index: 1995;
+  position: relative;
+}
+
+.tabs {
+  margin: 0;
+  border: 0px solid #e6e6e6;
+  background: #000000;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-title-banner {
+  background: url(../images/page-9/CIAYO-Games-page-12-05.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 450px;
+  color: #ffffff;
+
+}
+ /* career page  end*/
+
+
+  /* support page*/
+  #banner-support{
+    background: url(../images/page-10/CIAYO-Games-page-12-01.jpg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .wrap {
+    position: relative;
+    z-index: 100;
+    width: 100%;
+    height: 700px;
+    padding: 0 60px;
+    background: #ffffff;
+    background-size: cover;
+    overflow: hidden;
+    display: block;
+  }
+  
+  /* .wrap:after {
+    content:'';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ffffff;
+  } */
+  
+  .slider {
+    position: relative;
+    z-index: 200;
+    padding: 0 0px;
+    margin: 5rem auto;
+    max-width: 1014px;
+    width: 100%;
+    background-color: transparent;
+    z-index: 99;
+  }
+
+  .slick-dots {
+    margin: 2rem 0rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: -25px;
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-family: monospace;
+    font-size: 5rem;
+    z-index: 300;
+    outline: none;
+  }
+  
+  .slick-prev {
+    left: -50px;
+    text-align: left;
+  }
+  
+  .slick-next {
+    right: -50px;
+    text-align: right;
+  }
+  
+  .slick-track {
+    opacity: 1;
+    width: 15000px;
+    transform: translate3d(-540px, 0px, 0px);
+  }
+  
+  .item.slick-slide {
+    width: 400px;
+    height: 440px !important;
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+    position: relative; 
+    
+  }
+  
+  /* .slick-slide:after {
+    content:'';
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+    transition: -webkit-transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+  } */
+  
+  .item.slick-slide {
+    -webkit-transform: scale(0.7)  translate(640px);
+            transform: scale(0.7)  translate(640px);
+            background-size: 110% 94% !important;
+            
+  }
+  
+  .item.slick-slide.slick-center + .slick-slide {
+    -webkit-transform: scale(0.7)  translate(640px);
+    transform: scale(0.7)  translate(640px);
+  }
+  
+  .item.slick-slide.slick-center + .slick-slide + .item.slick-slide {
+    -webkit-transform: scale(0.7)  translate(-640px);
+            transform: scale(0.7)  translate(-640px);
+    z-index: 5;
+    background-size: 109% 95% !important;
+  }
+  
+  .item.slick-slide.slick-active {
+    -webkit-transform: scale(0.8) translate(250px);
+            transform: scale(0.8) translate(250px);
+  }
+  
+  .item.slick-slide.slick-center {
+    /* margin: 0 -10%; */
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+    z-index: 30;
+    background-size: 100% !important;
+  }
+  
+  .slick-center:after {
+    opacity: 0;
+  }
+
+  .slick-dots li {
+    background: #B3B3B3;
+    width: 20px;
+    border-radius: 1rem;
+    height: 20px;
+    list-style: none;
+    margin: 0rem 0.3rem;
+  }
+
+  .slick-dots li button {
+    background: #B3B3B3;
+    width: 20px;
+    border-radius: 1rem;
+    height: 20px;
+    list-style: none;
+    margin: 0rem 0.3rem;
+    visibility: hidden;
+  }
+
+  .slick-dots li:hover {
+    background: #efa33f;
+    width: 20px;
+    border-radius: 1rem;
+    height: 20px;
+    list-style: none;
+    margin: 0rem 0.3rem;
+  }
+
+  .slick-slide a{
+    display: none;
+  }
+  
+  .slick-slide.slick-current a{
+    display: block;
+  }
+
+  li.slick-active {
+    background: #efa33f !important;
+  }
+
+  .slick-active .slick-dots li:active  {
+    background: #efa33f;
+    width: 20px;
+    border-radius: 1rem;
+    height: 20px;
+    list-style: none;
+    margin: 0rem 0.3rem;
+  }
+
+  .slider-support-mobile {
+    display: none;
+  }
+
+  .content-select {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background: #000000;
+    margin: 1rem 1rem;
+  }
+
+  .bg-select {
+    background: #000000;
+  }
+
+  .content-select select {
+    height: 2.4375rem;
+    margin: 0 2rem 1rem;
+    padding: .5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #cacaca;
+    border-radius: 3px;
+    background-color: #000000;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffffff;
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+}
+
+.content-select select:focus {
+  outline: 0;
+  border: 0px solid #8a8a8a;
+  background-color: #000000;
+  -webkit-box-shadow: 0 0 5px #cacaca;
+  box-shadow: 0 0 5px #cacaca;
+  -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+  transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+  transition: box-shadow .5s,border-color .25s ease-in-out;
+  transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+}
+
+.icon-search-support {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  background: transparent;
+  color: #000000;
+}
+
+.icon-search-support:hover {
+  background: transparent;
+  color: #000000;
+}
+
+.icon-search-support:focus {
+  background: transparent;
+  color: #000000;
+}
+
+.search {
+  position: relative;
+}
+
+.search .search-top-bar {
+  background: #ffffff;
+  margin-left: 7rem;
+  width: 440px;
+  height: 56px;
+  border-radius: 1rem;
+}
+
+.search .search-top-bar::placeholder {
+  color: #000000;
+  font-weight: 600;
+  padding: 0rem 1rem;
+}
+
+.tabs-support .tabs {
+  margin: 0;
+  border: 0px solid #e6e6e6;
+  background: transparent;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+}
+
+.tabs-support .tabs-panel {
+  padding: 4rem 0rem;
+}
+
+.tabs-support .tabs-content {
+  border: 0px solid #e6e6e6;
+  border-top: 0;
+  background: #fefefe;
+  color: #0a0a0a;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.tabs-support .tabs-title>a:focus,.tabs-support .tabs-title>a[aria-selected=true] {
+  background: #efa33f;
+  color: #000000;
+}
+
+.tabs-support .tabs-title>a {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.10rem;
+  line-height: 1;
+  background: #ccc;
+  color: #ffffff;
+  font-weight: 600;
+  width: 250px;
+  height: 70px;
+  margin: 0rem 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabs-content-support .title-tabs-content {
+  background: #000000;
+  padding: 0.2rem 0.8rem;
+  color: #efa33f;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.link-content-support {
+  padding: 1rem 0rem;
+}
+
+.link-content-support a {
+  color: #000000;
+}
+
+.link-content-support a:hover {
+  color: #efa33f;
+}
+
+.link-content-support li {
+  list-style: none;
+}
+
+.select-language {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 7rem
+}
+
+.select-language select {
+    width: 160px;
+    height: 2.4375rem;
+    margin: 0 0 1rem;
+    padding: .4rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    background-color: #fefefe;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #0a0a0a;
+    background-origin: content-box;
+    background-position: right -1rem center;
+    background-repeat: no-repeat;
+    background-size: 9px 6px;
+    padding-right: 1.5rem;
+    -webkit-transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: border-color .25s ease-in-out,-webkit-box-shadow .5s;
+    transition: box-shadow .5s,border-color .25s ease-in-out;
+    transition: box-shadow .5s,border-color .25s ease-in-out,-webkit-box-shadow .5s;
+
+}
+
+.breadcrumbs li:not(:last-child)::after {
+  position: relative;
+  margin: 0 .75rem;
+  opacity: 1;
+  content: "/";
+  color: #efa33f;
+}
+
+.breadcrumbs a.first-breadcrumbs{
+  color: #efa33f !important;
+}
+
+   /* support page  end*/
+
+ /* career */
+
+ #banner-contact{
+  background: url(../images/page-12/CIAYO-Games-page-15-01.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100vh;
+  padding-right: 12rem;
+}
+
+ .content-banner-contact {
+   text-align: right;
+}
+
+.message-contact {
+   height: 400px;
+}
+
+.button-contact {
+  background-color: #FBB03C;
+  color: #7C6138;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 50px;
+  border-radius: 0.4rem;
+  font-weight: 600;
+}
+
+.form-contact {
+  background-color: #000000;
+  height: 100%;
+  padding: 4rem;
+}
+
+/* career end */
+
+h2, .home.blog .entry-title {
+  color: #ffffff !important;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  line-height: 1.4;
+  margin: 0 0 0.75em;
+  padding: 0 0 0; 
+}
+
+#banner-homepage h2 {
+  font-weight: 600;
+}
+
+
+#banner-our-story h2 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#banner-our-story h4 {
+  margin-bottom: 1.5rem;
+}
+
+#banner-games h2 {
+  font-weight: 600;
+  color: #000000 !important;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#banner-games p {
+  font-size: 1.5rem;
+  margin-bottom: 0rem;
+}
+
+#banner-contact h2 {
+  font-weight: 600;
+  color: #000000 !important;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+#banner-contact h5 {
+  font-size: 1.3rem;
+  margin-bottom: 0rem;
+}
+
+#banner-career h2 {
+  font-weight: 600;
+  color: #ffffff !important;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+#banner-career p {
+  font-size: 1.2rem;
+}
+
+
+#banner-support h2 {
+  font-weight: 600;
+  color: #ffffff !important;
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  margin-top: 1rem;
+}
+
+#banner-support  p {
+  font-size: 1.2rem;
+}
+
+
+#content-career h2{
+  font-size: 2rem;
+  color: #000 !important;
+}
+
+#content-career h3 {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+.bg-career-3 h2 {
+  font-size: 2rem;
+  margin-bottom: 0rem;
+  color: #000 !important;
+}
+
+.bg-fun h3 {
+  color: #000;
+}
+
+.bg-fun p {
+  color: #000;
+}
+
+.right-adaptation-link:hover {
+  color: #efa33f;
+}
+
+.bg-content-4-ciayo-stories h2{
+  color: #000 !important;
+}
+
+.bg-content-4-ciayo-stories h3{
+  color: #000 !important;
+}
+
+.right-achievements ul li {
+  margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 1500px) and (max-width: 1922px) {
+  .games-bg-1 {
+    background: url(../images/CIAYO-games-aset-BG-04-01.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    height: 760px;
+    width: 100vw;
+    color: #ffffff;
+    margin: 5rem 0rem;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-2 {
+  background: url(../images/CIAYO-games-aset-BG-04-02.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 760px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-3 {
+  background: url(../images/CIAYO-games-aset-BG-04-03.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 760px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-4 {
+  background: url(../images/CIAYO-games-aset-BG-04-04.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 760px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.top-bar {
+  background-size: cover;
+  position: fixed;
+  border: none;
+  background: linear-gradient(90deg, rgba(0,212,255,0) 5%, rgb(0, 0, 0) 6%, rgb(0, 0, 0) 92%, rgba(0,0,0,0) 87%);
+      background-color: rgba(0, 0, 0, 0);
+  z-index: 2000;
+  width: 1400px;
+  margin-left: -710px;
+  height: 78px;
+  left: 50%;
+  top: 2px;
+}
+
+
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .top-bar {
+    background-size: cover;
+    position: fixed;
+    border: none;
+    background: linear-gradient(90deg, rgba(0,212,255,0) 8%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 89%, rgba(0,0,0,0) 87%);
+    z-index: 2000;
+    width: 1020px;
+    margin-left: -524px;
+    height: 78px;
+    left: 50%;
+    top: 2px;
+}
+
+.dropdown-pane {
+  position: absolute;
+  z-index: 10;
+  display: flex !important;
+  width: 960px;
+  padding: 1rem 5rem;
+  visibility: hidden;
+  border: 0px solid #cacaca;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #fefefe;
+  font-size: 0.9rem;
+  background: url(../images/CIAYO-games-dropdown-menu-full.png) no-repeat center;
+  background-size: 100% 100%;
+  left: 3%;
+  top: 89%;
+  height: 78px;
+}
+    
+}
+
+@media only screen and (min-width: 900px) and (max-width: 1000px) {
+
+.top-bar {
+  background-size: cover;
+  position: fixed;
+  border: none;
+  background: linear-gradient(90deg, rgba(0,212,255,0) 8%, rgba(0,0,0,1) 6%, rgba(0,0,0,1) 88%, rgba(0,0,0,0) 87%);
+  z-index: 2000;
+  width: 924px;
+  margin-left: -473px;
+  height: 78px;
+  left: 50%;
+  top: 2px;
+}
+
+.top-bar input.search-top-bar:focus {
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 93px;
+  border-radius: 3rem;
+  
+}
+
+.top-bar input.search-top-bar:hover {
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 93px;
+  border-radius: 3rem;
+}
+
+.dropdown-pane {
+  position: absolute;
+  z-index: 10;
+  display: flex !important;
+  width: 869px;
+  padding: 1rem 4rem;
+  visibility: hidden;
+  border: 0px solid #cacaca;
+  color: #ffffff;
+  border-radius: 3px;
+  background-color: #fefefe;
+  font-size: 0.8rem;
+  background: url(../images/CIAYO-games-dropdown-menu-full.png) no-repeat center;
+  background-size: 100% 100%;
+  left: 3%;
+  top: 89%;
+  height: 78px;
+}
+
+#banner-homepage {
+  background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  height: 50vh;
+}
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+  #banner-homepage {
+    background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    height: 50vh;
+  }
+
+.curtain-menu {
+  z-index: 2000;
+  position: fixed;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.curtain-menu-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition-delay: 0.5s;
+  visibility: hidden;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li {
+  width: 100%;
+  font-weight: 100;
+  font-size: 2rem;
+  min-height: 2.8125rem;
+  padding: 1rem;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover {
+  background: #efa33f;
+  border-radius: 4rem;
+  color: #000 !important;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover a {
+  color: #000;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li a {
+  color: #fefefe;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.curtain-menu .curtain {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: -webkit-flex 0.45s;
+  transition: flex 0.45s;
+  transition: flex 0.45s, -webkit-flex 0.45s, -ms-flex 0.45s;
+}
+
+.curtain-menu .curtain:nth-child(2) {
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background: transparent;
+}
+
+.curtain-menu .curtain:nth-child(odd) {
+  background: #000;
+}
+
+.curtain-menu-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 2005;
+}
+
+.curtain-menu-button-toggle {
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 5000px;
+  background: #efa33f;
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  right: 5%;
+  top: 3%;
+}
+
+.curtain-menu-button-toggle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 35px;
+  height: 5px;
+  background: #000;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition-delay: 0.5s;
+}
+
+.curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+}
+
+.curtain-menu-button-toggle:hover {
+  background: #efa33f;
+}
+
+.curtain-menu-button-toggle:hover div {
+  background: #000;
+}
+
+.curtain-menu-button-toggle:active {
+  box-shadow: none;
+}
+
+.curtain-menu-open .curtain:nth-child(2) {
+  -webkit-flex: 0 0 0%;
+      -ms-flex: 0 0 0%;
+          flex: 0 0 0%;
+}
+
+.curtain-menu-open .curtain-menu-wrapper {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  visibility: visible;
+  pointer-events: all;
+  background: #000;
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+}
+
+.top-bar, .top-bar ul.tob-bar-mobile {
+  background-color: #000000;
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 0rem 0rem 8rem 8rem;
+  transform: translateY(0%);
+  transition-delay: 1s, 1s, 1.3s;
+}
+
+.menu-logo img {
+  width: 150px;
+}
+
+.content-games-1 {
+  position: absolute;
+  right: 6%;
+  bottom: -6%;
+}
+
+.content-games-2 {
+  position: absolute;
+  right: 6%;
+  bottom: -6%;
+}
+
+.content-games-3 {
+  position: absolute;
+  right: 6%;
+  bottom: -6%;
+}
+
+.content-games-4 {
+  position: absolute;
+  right: 6%;
+  bottom: -6%;
+}
+
+.games-bg-1 {
+  background: url(../images/CIAYO-games-aset-BG-04-01.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-2 {
+  background: url(../images/CIAYO-games-aset-BG-04-02.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-3 {
+  background: url(../images/CIAYO-games-aset-BG-04-03.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+.games-bg-4 {
+  background: url(../images/CIAYO-games-aset-BG-04-04.jpg) no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+  height: 500px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+}
+
+
+.news-bg-1 {
+  
+  height: 270px !important;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-2 {
+  
+  height: 270px !important;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-3 {
+ 
+  height: 270px !important; 
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-4 {
+  
+  height: 270px !important;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+}
+
+
+@media only screen and (max-width: 1030px) {
+  #banner-homepage {
+    background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    height: 38vh;
+  } 
+
+.curtain-menu {
+  z-index: 2000;
+  position: fixed;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  pointer-events: none;
+}
+
+.curtain-menu-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  transition-delay: 0.5s;
+  visibility: hidden;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li {
+  width: 100%;
+  font-weight: 100;
+  font-size: 1rem;
+  min-height: 2.8125rem;
+  padding: 0rem;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+  display: flex;
+  align-items: center;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover {
+  background: #efa33f;
+  border-radius: 4rem;
+  color: #000 !important;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li:hover a {
+  color: #000;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li a {
+  color: #fefefe;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.curtain-menu .curtain {
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  transition: -webkit-flex 0.45s;
+  transition: flex 0.45s;
+  transition: flex 0.45s, -webkit-flex 0.45s, -ms-flex 0.45s;
+}
+
+.curtain-menu .curtain:nth-child(2) {
+  -webkit-flex: 1 0 100%;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  background: transparent;
+}
+
+.curtain-menu .curtain:nth-child(odd) {
+  background: #000;
+}
+
+.curtain-menu-button {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 2005;
+}
+
+.curtain-menu-button-toggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 5000px;
+  background: #efa33f;
+  position: fixed;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  right: 8%;
+}
+
+.curtain-menu-button-toggle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 3px;
+  background: #000;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition-delay: 0.5s;
+}
+
+.curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-180deg);
+}
+
+.curtain-menu-button-toggle:hover {
+  background: #efa33f;
+}
+
+.curtain-menu-button-toggle:hover div {
+  background: #000;
+}
+
+.curtain-menu-button-toggle:active {
+  box-shadow: none;
+}
+
+.curtain-menu-open .curtain:nth-child(2) {
+  -webkit-flex: 0 0 0%;
+      -ms-flex: 0 0 0%;
+          flex: 0 0 0%;
+}
+
+.curtain-menu-open .curtain-menu-wrapper {
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  visibility: visible;
+  pointer-events: all;
+  background: #000;
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar1 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.curtain-menu-open .curtain-menu-button-toggle .bar2 {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+      -ms-transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+          transform: translateX(-50%) translateY(-50%) rotate(-135deg);
+}
+
+
+
+  .top-bar{
+    position: fixed;
+    background-color: #000000;
+    -webkit-box-shadow: 3px 4px 8px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 4px 8px -2px rgba(0,0,0,0.75);
+    box-shadow: 3px 4px 8px -2px rgba(0,0,0,0.75);
+    z-index: 2000;
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 64px;
+    padding-bottom: 3rem;
+}
+
+.top-bar input.search-top-bar {
+  max-width: 200px;
+  margin-right: 0rem;
+  width: 110px;
+  margin-top: 1rem;
+}
+
+.button-group.large .button {
+  font-size: 1rem;
+}
+
+.timeline-bl {
+  border-left: none;
+}
+
+.time-timeline:before {
+  display: none;
+}
+
+.start-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0rem 0.7rem !important;
+}
+
+.title-bar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2000;
+  display: flex !important;
+}
+
+.form-contact {
+  background-color: #000000;
+  height: 100%;
+  padding: 1rem;
+}
+
+.orbit-caption {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0.2rem;
+  background-color: rgba(10,10,10,.5);
+  color: #fefefe;
+  text-align: center;
+}
+
+.games-link-1 {
+  display: none;
+ }
+ 
+ .games-link-2 {
+  display: block;
+ }
+
+.bg-content-4-ciayo-stories {
+  background: url(../images/page-8/CIAYO-Games-page-8-04.jpg) no-repeat left;
+  
+}
+
+.bg-career-3-content {
+  position: absolute;
+  bottom: 0%;
+  text-align: center;
+}
+
+.content-4-ciayo-stories {
+  padding: 0rem 2rem !important;
+  margin: 0rem 0rem !important;
+}
+
+.mobile-info-news-1{
+  top: 109%;
+  position: absolute;
+  color: #000000;
+}
+
+.mobile-info-news-2{
+  top: 109%;
+  position: absolute;
+  color: #000000;
+}
+
+.mobile-info-news-3{
+  top: 109%;
+  position: absolute;
+  color: #000000;
+}
+
+.mobile-info-news-4{
+  top: 109%;
+  position: absolute;
+  color: #000000;
+}
+
+.info-news h6 {
+  font-size: 16px;
+  font-weight: 600;
+
+}
+
+.info-news p {
+  font-size: 14px;
+  
+}
+
+#banner-our-story {
+  height: 100vh;
+  width: 100%;
+  padding: 0rem;
+  justify-content: center;
+}
+
+.banner-monster-tap {
+  background-size: 100% 100%;
+  height: 200px;
+  /* width: 100%; */
+}
+
+.banner-heroes-uprising {
+  background-size: 100% 100%;
+  height: 200px;
+  /* width: 100%; */
+}
+
+.banner-card-heroes-uprising {
+  background-size: 100% 100%;
+  height: 200px;
+  /* width: 100%; */
+}
+
+.banner-ciayo-stories {
+  background-size: 100% 100%;
+  height: 200px;
+  /* width: 100%; */
+}
+
+.top-bar .top-bar-left {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  margin: auto;
+}
+
+.top-bar , .top-bar ul.tob-bar-mobile {
+  background-color: #000000;
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 0rem 0rem 8rem 8rem;
+  transform: translateY(0%);
+  transition-delay: 1s, 1s, 1.3s; 
+}
+
+
+.menu .menu-text {
+  margin: 1rem 0rem;
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: inherit;
+}
+
+.bg-complex {
+  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 290px;
+  padding: 0rem 2rem;
+  color: #ffffff;
+}
+
+.right-adaptation {
+  position: absolute;
+  max-width: 500px;
+  top: 34%;
+  right: 0%;
+  padding: 4rem 2rem;
+  background-color: #020202ab;
+  margin: 2rem 0rem;
+}
+
+.news-container-1,
+.news-container-2,
+.news-container-3,
+.news-container-4 {
+  padding: 1rem;
+}
+
+.news-bg-1 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-01.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-2 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-02.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-3 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-03.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-4 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-04.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 200px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.pr-4 {
+  padding-right: 0rem;
+}
+
+.news-title {
+  width: 100px;
+  height: 50px;
+  background: #333333;
+  color: orange;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  right: 28px;
+}
+
+.orbit-next {
+  right: 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.orbit-previous {
+  left: 0;
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.banner-news {
+  background-size: cover;
+  max-height: 100px;
+  width: 100%;
+}
+
+#content-news {
+  padding: 3rem 0rem;
+}
+
+.img-download {
+  margin: 0rem 0.5rem;
+}
+
+.search-top-bar {
+  background-color: #ffffff;
+  border: none;
+}
+
+.button-bg-search {
+  background: transparent;
+  background-size: cover;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 16px;
+  right: 6px;
+  color: #000000;
+  padding-left: 0rem !important;
+}
+
+.tabs-support .tabs-title>a {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.10rem;
+  line-height: 1;
+  background: #ccc;
+  color: #ffffff;
+  font-weight: 600;
+  width: 250px;
+  height: 70px;
+  margin: 0.5rem 0.2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.games-bg-1 {
+  background: url(../images/CIAYO-games-aset-BG-04-01.jpg) no-repeat;
+  background-size: contain;
+  position: relative;
+  height: 200px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 10rem;
+}
+
+
+.games-bg-2 {
+  background: url(../images/CIAYO-games-aset-BG-04-02.jpg) no-repeat ;
+  background-size: contain;
+  position: relative;
+  height: 200px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 10rem;
+}
+
+.games-bg-3 {
+  background: url(../images/CIAYO-games-aset-BG-04-03.jpg) no-repeat ;
+  background-size: contain;
+  position: relative;
+  height: 200px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 10rem;
+}
+
+.games-bg-4 {
+  background: url(../images/CIAYO-games-aset-BG-04-04.jpg) no-repeat ;
+  background-size: contain;
+  position: relative;
+  height: 200px;
+  width: 100vw;
+  color: #ffffff;
+  margin: 5rem 0rem;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 10rem;
+}
+
+#content-1-homepage {
+  background: #FFFFFF;
+  background-size: cover;
+  display: block;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 1rem;
+  padding-bottom: 4rem;
+}
+
+.content-games-1 {
+  position: absolute;
+  right: 8%;
+  bottom: -86%;
+  font-size: 14px;
+}
+
+.content-games-2 {
+  position: absolute;
+  right: 8%;
+  bottom: -86%;
+  font-size: 14px;
+}
+
+.content-games-3 {
+  position: absolute;
+  right: 8%;
+  bottom: -86%;
+  font-size: 14px;
+}
+
+.content-games-4 {
+  position: absolute;
+  right: 8%;
+  bottom: -86%;
+  font-size: 14px;
+}
+
+.tabs-title>a {
+  display: block;
+  padding: 1.25rem 1.5rem;
+  font-size: 1.10rem;
+  line-height: 1;
+  background: #ccc;
+  color: #ffffff;
+  font-weight: 600;
+  width: 200px;
+  margin: 0.2rem 1rem;
+  text-align: center;
+}
+
+.tabs {
+  margin: 0;
+  border: 0px solid #e6e6e6;
+  background: #000000;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.panel-tab-career {
+  background-color: #000000;
+  height: 260px;
+  text-align: center;
+}
+
+.bg-title-banner {
+  background: url(../images/page-9/CIAYO-Games-page-12-05.png) no-repeat center;
+  background-size: 100% 100%;
+  width: 100%;
+  color: #ffffff;
+}
+
+.wrap {
+  display: none;
+}
+
+.slider-support-mobile {
+  margin: 3rem 0rem;
+  display: block;
+}
+
+.content-select {
+  flex-direction: column;
+}
+
+.content-select select {
+  width: auto;
+  margin: 1rem 2rem 1rem;
+}
+
+.search .search-top-bar {
+  background: #ffffff;
+  margin-left: 0rem;
+  width: auto;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.icon-search-support {
+  position: absolute;
+  top: -1%;
+  right: 2%;
+  background: transparent;
+  color: #000000;
+}
+
+.content-banner-ourstory {
+  position: relative;
+  right: 0;
+}
+
+.search .search-top-bar::placeholder {
+  color: #000000;
+  font-weight: 600;
+  padding: 0rem 1rem;
+  font-size: 12px;
+}
+
+.content-banner-contact {
+  text-align: center;
+  padding: 0rem 2rem;
+}
+
+.content-banner-contact h2{
+  font-weight: 600;
+}
+
+.bg-title-banner h2{
+  font-weight: 600;
+}
+
+
+
+#banner-contact {
+  background: url(../images/page-12/CIAYO-Games-page-15-01.jpg) no-repeat center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding-right: 0rem;
+}
+
+#banner-homepage h2 {
+  font-weight: 600;
+}
+
+
+#banner-our-story h2 {
+  font-weight: 600;
+}
+
+#banner-games h2 {
+  font-weight: 600;
+  color: #000000;
+}
+
+footer {
+  font-size: 14px;
+}
+
+.footer-right-top img {
+  width: 80px !important;
+}
+}
+
+@media only screen and (min-width: 374px) and (max-width: 376px) {
+  #banner-homepage {
+    background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    height: 25vh !important;
+}
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1030px) {
+  .curtain-menu-button-toggle {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 5000px;
+    background: #efa33f;
+    position: fixed;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    right: 5%;
+    top: 3%;
+}
+
+.curtain-menu-button-toggle div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 31px;
+  height: 5px;
+  background: #000;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  transition-delay: 0.5s;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li {
+  width: 100%;
+  font-weight: 100;
+  font-size: 2.5rem;
+  min-height: 2.8125rem;
+  padding: 0rem;
+  text-align: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  transition: all 0.2s ease-in;
+}
+
+.curtain-menu-wrapper .curtain-menu-list li a {
+  color: #fefefe;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 1rem;
+}
+}
+
+@media only screen and (min-width: 500px) and (max-width: 1030px) {
+  
+.news-bg-1 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-01.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 350px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+  
+}
+
+.news-bg-2 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-02.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 350px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-3 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-03.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 350px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-4 {
+  background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-04.jpg) no-repeat center;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  max-width: 100%;
+  height: 350px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) { 
+  #banner-homepage {
+    background: url(../images/HOMEPAGE_main_banner.jpg) no-repeat center;
+    background-size: 100% auto;
+    display: flex;
+    align-items: center;
+    height: 31vh;
+  }
+
+  .news-bg-1 {
+   
+    height: 180px;
+    margin: 4rem auto;
+    color: #ffffff;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+    margin-bottom: 14rem;
+}
+
+.news-bg-2 {
+  
+  height: 180px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-3 {
+ 
+  height: 180px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+.news-bg-4 {
+
+  height: 180px;
+  margin: 4rem auto;
+  color: #ffffff;
+  /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+  margin-bottom: 14rem;
+}
+
+#content-2-homepage h2 {
+  font-size: 1.6rem;
+}
+
+.button-group.large .button {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+#banner-homepage h4 {
+  font-size: 18px;
+  color: black;
+}
+
+#banner-homepage h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 1rem;
+}
+
+
+.button-see-games {
+  background-color: #F4C04D;
+  color: #000000;
+  font-size: 1rem !important;
+}
+
+.news-title {
+  width: 70px;
+  height: 36px;
+  background: #333333;
+  color: orange;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0rem 0rem 0.4rem 0.4rem;
+  right: 28px;
+  font-size: 13px;
+}
+
+.info-news h6 {
+  font-size: 16px;
+  font-weight: 500;
+}
+ }
+
+@media only screen and (min-width: 768px) and (max-width: 1030px) {
+  
+  .news-bg-1 {
+    background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-01.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 350px;
+    margin: 4rem auto;
+    color: #ffffff;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+    margin-bottom: 14rem;
+    
+  }
+  
+  .news-bg-2 {
+    background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-02.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 350px;
+    margin: 4rem auto;
+    color: #ffffff;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+    margin-bottom: 14rem;
+  }
+  
+  .news-bg-3 {
+    background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-03.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 350px;
+    margin: 4rem auto;
+    color: #ffffff;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+    margin-bottom: 14rem;
+  }
+  
+  .news-bg-4 {
+    background: url(../images/page-1/CIAYO-games-aset-BG-mobile-01-04.jpg) no-repeat center;
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    max-width: 100%;
+    height: 350px;
+    margin: 4rem auto;
+    color: #ffffff;
+    /* clip-path: polygon(85% 0, 100% 49%, 85% 100%, 17% 100%, 0 48%, 16% 0); */
+    margin-bottom: 14rem;
+  }
+  
+  .news-title {
+    width: 100px;
+    height: 50px;
+    background: #333333;
+    color: orange;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0rem 0rem 0.4rem 0.4rem;
+    right: 28px;
+  }
+  
+  .slider-support-mobile {
+    margin: 3rem 5rem !important;
+    display: block;
+}
+  
+  .p-tablet {
+    padding: 0 120px;
+  }
+  
+  }
+

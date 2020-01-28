@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'RobotoRegular';
+    src: url('fonts/RobotoRegular.eot');
+    src: url('fonts/RobotoRegular.eot') format('embedded-opentype'),
+         url('fonts/RobotoRegular.woff2') format('woff2'),
+         url('fonts/RobotoRegular.woff') format('woff'),
+         url('fonts/RobotoRegular.ttf') format('truetype'),
+         url('fonts/RobotoRegular.svg#RobotoRegular') format('svg');
+}
+
+@font-face {
+    font-family: 'steelfishrg';
+    src: url('fonts/steelfishrg.eot');
+    src: url('fonts/steelfishrg.eot') format('embedded-opentype'),
+         url('fonts/steelfishrg.woff2') format('woff2'),
+         url('fonts/steelfishrg.woff') format('woff'),
+         url('fonts/steelfishrg.ttf') format('truetype'),
+         url('fonts/steelfishrg.svg#steelfishrg') format('svg');
+}
+
+@font-face {
+    font-family: 'steelfish_bd';
+    src: url('fonts/steelfish_bd.eot');
+    src: url('fonts/steelfish_bd.eot') format('embedded-opentype'),
+         url('fonts/steelfish_bd.woff2') format('woff2'),
+         url('fonts/steelfish_bd.woff') format('woff'),
+         url('fonts/steelfish_bd.ttf') format('truetype'),
+         url('fonts/steelfish_bd.svg#steelfish_bd') format('svg');
+}
